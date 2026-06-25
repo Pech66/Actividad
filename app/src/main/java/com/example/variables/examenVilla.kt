@@ -25,7 +25,7 @@ fun main() {
         println("4. Finalizar programa")
         print("Seleccione una opcion: ")
 
-        // Validación para evitar que el programa truene si no ingresan un número
+        
         if (!scanner.hasNextInt()) {
             println("Por favor, ingrese un número válido.")
             scanner.next()
@@ -34,7 +34,7 @@ fun main() {
         }
 
         opcion = scanner.nextInt()
-        scanner.nextLine() // Limpiar buffer
+        scanner.nextLine() 
 
         when (opcion) {
             1 -> registrarParticipante(scanner)
